@@ -1,9 +1,0 @@
-#include <iostream>
-using namespace std;
-
-int main(int argCount, char *argValues[]) {
-	cout << "Jacob Barnett" << endl;
-	cout << "Eclipse" << endl;
-	cout << "Yellow" << endl;
-	return EXIT_SUCCESS;
-}

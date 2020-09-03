@@ -1,1 +1,7 @@
-Info: Nothing to build for Homework0 - A
+13:31:52 **** Incremental Build of configuration Debug for project Homework0 - A ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\hw0a.o" "..\\src\\hw0a.cpp" 
+g++ -o "Homework0 - A.exe" "src\\hw0a.o" 
+
+13:31:53 Build Finished. 0 errors, 0 warnings. (took 599ms)
+

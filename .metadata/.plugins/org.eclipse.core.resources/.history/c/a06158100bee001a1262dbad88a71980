@@ -30,6 +30,10 @@ int main(int argCount, char *argValues[]) {
 		}
 		inFile.close();
 
+		for (int i = 0; i < lengthOfFile; i++) {
+			cout << "data[" << i << "] = " << data[i] << endl;
+		}
+
 		// Call the method that returns the number of runs in the array
 		int numberOfRuns = getNumberOfRuns(data, lengthOfFile);
 		cout << "The total number of runs in the array: " << numberOfRuns << endl;

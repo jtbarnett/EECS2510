@@ -6,8 +6,8 @@
 using namespace std;
 
 int main(int argCount, char *argValues[]) {
-	cout << "Name: Jacob Barnett" << endl;
-	cout << "IDE: Eclipse" << endl;
-	cout << "Favorite Color: Yellow" << endl;
+	cout << "Jacob Barnett" << endl;
+	cout << "Eclipse" << endl;
+	cout << "Yellow" << endl;
 	return EXIT_SUCCESS;
 }
