@@ -38,6 +38,7 @@ int main(int argCount, char *argValues[]) {
 }
 
 int getNumberOfRuns(int inputArray[], int sizeOfArray) {
+	// Only want to make a run when the run changes to a different value
 	int runs = 0;
 	int previousValue, currentValue;
 	bool isUpRun = false;

@@ -128,3 +128,8 @@ Info: Nothing to build for Homework0 - B
 Info: Nothing to build for Homework0 - C
 Info: Nothing to build for Homework0 - C
 Info: Nothing to build for Homework0 - C
+Info: Nothing to build for Homework0 - C
+18:20:29 **** Incremental Build of configuration Debug for project Homework0 - C ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\hw0c.o" "..\\src\\hw0c.cpp" 
+g++ -o "Homework0 - C.exe" "src\\hw0c.o" 
