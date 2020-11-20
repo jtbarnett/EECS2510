@@ -1,1 +1,7 @@
-Info: Nothing to build for Homework0 - B
+21:46:09 **** Rebuild of configuration Debug for project Homework0 - B ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\hw0b.o" "..\\src\\hw0b.cpp" 
+g++ -o "Homework0 - B.exe" "src\\hw0b.o" 
+
+21:46:10 Build Finished. 0 errors, 0 warnings. (took 600ms)
+

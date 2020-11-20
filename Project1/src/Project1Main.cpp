@@ -3,6 +3,7 @@
 // Project 1
 
 #include <memory>
+#include <fstream>
 #include <iostream>
 #include <string>
 #include "operations.h"
@@ -11,20 +12,18 @@ using namespace std;
 
 int main(int argCount, char *argValues[]) {
 	// start a new BTree with t = 6
-	shared_ptr<BTree> mainBTree(new BTree(6));
+	shared_ptr<BTree> mainBTree(new BTree(2));
 
-	mainBTree->insert("yes");
-	mainBTree->insert("no");
-	mainBTree->insert("e");
-	mainBTree->insert("w");
-	mainBTree->insert("t");
-	mainBTree->insert("a");
-	mainBTree->insert("y");
-	mainBTree->insert("f");
-	mainBTree->insert("i");
-	mainBTree->insert("p");
-	mainBTree->insert("m");
-	mainBTree->insert("q");
+	// Load in the initial data for the BTree
+	/*ifstream inFile;
+	inFile.open("InputData.txt");
+	if (!inFile.is_open()){
+		cerr << "Error while opening the file InputData.txt." << endl;
+		exit(EXIT_FAILURE);
+	} else {
+		operations::inputBTree(inFile, mainBTree);
+		inFile.close();
+	}*/
 
 	cout << "The commands to enter are: A or a (Add a key), L or l (Lookup a key), R or r (Remove a key), \n"
 			"D or d (Dump the tree), Q or q (quit the program)" << endl;
@@ -49,20 +48,5 @@ int main(int argCount, char *argValues[]) {
 			cout << "You have entered an invalid command. Please try again." << endl;
 		}
 	}
-
-    /*
-    myBTree->insert("yes");
-    myBTree->insert("no");
-    myBTree->insert("e");
-    myBTree->insert("w");
-    myBTree->insert("t");
-    myBTree->insert("a");
-    myBTree->insert("y");
-    myBTree->insert("f");
-    myBTree->insert("i");
-    myBTree->insert("p");
-    myBTree->insert("m");
-    */
-
 	return EXIT_SUCCESS;
 }
